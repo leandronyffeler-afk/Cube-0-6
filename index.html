@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Würfel</title>
+</head>
+<body style="font-family: system-ui, Arial; text-align:center; margin-top:60px;">
+  <h1>🎲 Würfel</h1>
+
+  <button style="font-size:24px; padding:20px 30px; border-radius:16px;"
+          onclick="würfeln()">Würfeln</button>
+
+  <div id="anzeige" style="font-size:48px; margin-top:30px;">–</div>
+
+  <script>
+    function würfeln() {
+      const zahl = Math.floor(Math.random() * 6) + 1;
+      document.getElementById("anzeige").textContent = zahl;
+    }
+  </script>
+</body>
+</html>
